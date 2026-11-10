@@ -1,0 +1,163 @@
+# Registry of every dataset procured for the elevator project.
+# Maintained by the /elevator-data-intake skill. One entry per dataset.
+#
+# authenticity: real | synthetic | semi-synthetic | unknown   (verified by /synthetic-check, cite evidence)
+# status: candidate | downloaded | profiled | curated | in_use | rejected
+
+datasets:
+  - id: azure_pdm
+    title: Microsoft Azure Predictive Maintenance
+    source: kaggle:arnabbiswas1/microsoft-azure-predictive-maintenance
+    license: unknown
+    authenticity: synthetic
+    evidence: "sensors mutually uncorrelated (|r|<0.003), lag-1 autocorr 0.06, failures only at 06:00/03:00, one sensor drifts 4-5 sigma before each failure type"
+    granularity: hourly, 100 machines, 2015
+    canonical_tables: [units, telemetry, events, maintenance]
+    raw_path: data/raw/azure
+    status: in_use
+    notes: fleet backbone of the POC; error3->comp2 (MOTOR), error4->comp3 (BRAKE)
+
+  - id: huawei_elevator_door
+    title: Elevator Predictive Maintenance (Huawei Munich Research Center)
+    source: kaggle:shivamb/elevator-predictive-maintenance-dataset (orig. zenodo:3653909)
+    license: CC0-1.0
+    authenticity: unknown
+    evidence: "x1-x4 are deterministic functions of revolutions, x5 of humidity; no timestamps or unit ids"
+    granularity: 4 Hz, single door, 112k rows
+    canonical_tables: [telemetry]
+    raw_path: data/raw/elevator
+    status: in_use
+
+  - id: ai4i_2020
+    title: AI4I 2020 Predictive Maintenance
+    source: kaggle:stephanmatzka/predictive-maintenance-dataset-ai4i-2020
+    license: CC-BY-NC-SA-4.0
+    authenticity: synthetic
+    evidence: "HDF/PWF/OSF reproduced exactly by threshold rules (115/95/98 rows)"
+    granularity: 10k independent rows
+    canonical_tables: [telemetry, events]
+    raw_path: data/raw/ai4i
+    status: in_use
+
+  - id: mimii_pump
+    title: MIMII pump sounds (normal/abnormal)
+    source: kaggle:giacomoveneri1/mimii-dataset-sound-data-for-malfunctioning-pump
+    license: CC-BY-SA-4.0
+    authenticity: real
+    evidence: "real 8-mic recordings (Hitachi MIMII); pump, not elevator"
+    granularity: 519 x 10 s clips @16 kHz
+    canonical_tables: [telemetry]
+    raw_path: data/raw/mimii
+    status: in_use
+
+  # ---- real datasets downloaded by scripts/download_real_data.sh ----
+  - id: mta_nyct_ee_availability
+    title: MTA NYCT Subway Elevator and Escalator Availability (2015-)
+    source: https://data.ny.gov/d/rc78-7x78
+    license: NY Open Data
+    authenticity: real
+    evidence: "MTA NYCT official open data (LiftNet/EAM); internally consistent; methodology PDF (reports/mta_nyct_ee_availability/audit.md)"
+    granularity: monthly per asset, 83,776 rows (45,980 elevator / 37,796 escalator), 701 assets, 2015-01..2026-09 (snapshot 2026-10-30)
+    canonical_tables: [units, aggregates]
+    raw_path: data/raw/mta_nyct_ee_availability
+    curated_path: data/curated/mta_nyct_ee_availability
+    status: in_use
+    notes: >-
+      Audit APPROVED WITH CAVEATS. Third-party (X) units record ~0 outages - exclude from outage analysis.
+      Model: experiments/mta_nyct_ee_availability_entrapment_next_month (next-month entrapment, PR-AUC 0.400 vs
+      base 0.229, audit approved with caveats).
+      Reports: reports/mta_nyct_ee_availability/{audit,profile,eda,BRIEF}.md; thresholds in
+      experiments/thresholds_mta_nyct_ee_availability. Join to live MTA outage feed on equipment code.
+
+  - id: mta_mnr_ee_availability
+    title: MTA Metro-North Elevator and Escalator Availability (2021-)
+    source: https://data.ny.gov/d/ax67-8386
+    license: NY Open Data
+    authenticity: real
+    granularity: monthly per branch, 345 rows (branch-level, not per asset)
+    canonical_tables: [aggregates]
+    raw_path: data/raw/mta_mnr_ee_availability
+    status: downloaded
+
+  - id: nyc_dob_elevator_complaints
+    title: NYC DOB Elevator Complaints
+    source: https://data.cityofnewyork.us/d/kqwi-7ncn
+    license: NYC Open Data
+    authenticity: real
+    granularity: 269,185 complaints since 2000
+    canonical_tables: [events]
+    raw_path: data/raw/nyc_dob_elevator_complaints
+    status: downloaded
+    notes: join to device registry on BIN (building); complaint/disposition codes need a code dictionary
+
+  - id: nyc_dob_elevator_devices
+    title: NYC DOB NOW Elevator Safety Compliance (device registry)
+    source: https://data.cityofnewyork.us/d/e5aq-a4j2
+    license: NYC Open Data
+    authenticity: real
+    granularity: 120,680 devices with status, inspection/report dates, BIN, location
+    canonical_tables: [units]
+    raw_path: data/raw/nyc_dob_elevator_devices
+    status: downloaded
+
+  - id: huawei_elevator_door_zenodo
+    title: Huawei elevator door predictive maintenance (original Zenodo release)
+    source: zenodo:3653909
+    license: see README in archive
+    authenticity: unknown
+    granularity: same 112k rows as huawei_elevator_door, plus original README
+    canonical_tables: [telemetry]
+    raw_path: data/raw/huawei_elevator_door_zenodo
+    status: downloaded
+
+  - id: elevator_acc_phone
+    title: ElevatorAcc2 - phone IMU log of elevator rides
+    source: kaggle:andrewross3/elevatoracc2
+    license: other
+    authenticity: real (phone sensor log format with ATTITUDE/ACCEL/GYRO lines, ~500 Hz)
+    granularity: 731,698 lines, unlabelled
+    canonical_tables: [telemetry]
+    raw_path: data/raw/elevator_acc_phone
+    status: downloaded
+
+  - id: realvibrations_elevator
+    title: Real Vibrations - elevator wall accelerometer (nipslab rv-000150)
+    source: https://realvibrations.nipslab.org/data/elevator/
+    license: see site terms
+    authenticity: real
+    granularity: 1,400,000 rows = 70 s @ 20 kHz, columns time, x, y, z (g), tab-separated data.dat
+    canonical_tables: [telemetry]
+    raw_path: data/raw/realvibrations_elevator
+    status: downloaded
+
+  # ---- real, but must be downloaded manually in a browser ----
+  - id: mondragon_17floor_trips
+    title: Dataset with trips of a 17-floor traction elevator
+    source: https://doi.org/10.48764/dwdv-gz94 (files Elevator_class_dataset.csv 12.7 MB, README.txt)
+    license: CC-BY-NC-SA-4.0 (non-commercial)
+    authenticity: real
+    granularity: 1.06M rows, labelled operating states
+    canonical_tables: [telemetry]
+    raw_path: data/raw/mondragon_17floor_trips
+    status: candidate
+    notes: server ebiltegia.mondragon.edu times out from this machine (WSL and Windows); download via browser
+
+  - id: figshare_traction_elevator
+    title: Traction Elevator Predictive Maintenance (figshare 26807974)
+    source: https://figshare.com/articles/dataset/Traction_Elevator_Predictive_maintenance_XLSX/26807974
+    license: CC-BY-4.0
+    authenticity: real
+    granularity: 1,416 samples (speed, acceleration, vibration)
+    canonical_tables: [telemetry]
+    raw_path: data/raw/figshare_traction_elevator
+    status: candidate
+    notes: figshare returns 403 to scripted downloads (bot protection); download via browser
+
+  # ---- real, access must be requested ----
+  - id: zenodo_pmsm_elevator
+    title: Multimodal Signal Dataset for Fault Detection in PMSM-Driven Elevators
+    source: zenodo:15613954 (restricted - use "Request access")
+    license: CC-BY-4.0
+    authenticity: real
+    canonical_tables: [telemetry]
+    status: candidate

@@ -1,0 +1,13 @@
+{
+  "dataset": "mta_nyct_ee_availability",
+  "scope": "MTA-operated elevators, monthly",
+  "fit_period": ["2015-01-01", "2023-09-01"],
+  "signals": {
+    "availability_24h_pct": {"direction": "low", "PRELIMINARY": 93.67, "WARNING": 88.7, "LEVEL_3": 71.69,
+                             "method": "PRELIMINARY robust z (median - 3 MAD); WARNING p5; LEVEL_3 p1"},
+    "unscheduled_outages_3m": {"direction": "high", "PRELIMINARY": 17.34, "WARNING": 24.02, "LEVEL_3": 30.69,
+                               "method": "robust z (median + 3 / 4.5 / 6 MAD)"}
+  },
+  "combine": "max level across signals",
+  "EMERGENCY": "any entrapment event (outage codes ENT, ENV)"
+}

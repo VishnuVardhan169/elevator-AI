@@ -1,0 +1,53 @@
+{
+  "rows": 83776,
+  "window": [
+    "2015-01-01",
+    "2026-09-01"
+  ],
+  "months": 141,
+  "units_by_type": {
+    "Elevator": 419,
+    "Escalator": 282
+  },
+  "dup_unit_month": 0,
+  "third_party_units_X": 99,
+  "units_with_gaps": 0,
+  "missing_unit_months_inside_span": 0,
+  "units_full_history": 481,
+  "units_starting_after_2015": 216,
+  "units_ending_before_last_month": 4,
+  "AM Peak: |availability - hours_avail/total| > 0.005": 0,
+  "AM Peak: hours_available > total_hours": 0,
+  "AM Peak: total_hours == 0": 2602,
+  "AM Peak: availability null": 2602,
+  "AM Peak: availability null AND total_hours>0": 0,
+  "PM Peak: |availability - hours_avail/total| > 0.005": 0,
+  "PM Peak: hours_available > total_hours": 0,
+  "PM Peak: total_hours == 0": 2585,
+  "PM Peak: availability null": 2585,
+  "PM Peak: availability null AND total_hours>0": 0,
+  "24-Hour: |availability - hours_avail/total| > 0.005": 0,
+  "24-Hour: hours_available > total_hours": 0,
+  "24-Hour: total_hours == 0": 2573,
+  "24-Hour: availability null": 2573,
+  "24-Hour: availability null AND total_hours>0": 0,
+  "total != scheduled + unscheduled": 0,
+  "entrapments > unscheduled": 0,
+  "24h total hours > hours in month": 0,
+  "partial months (24h total < 90% of month)": 3493,
+  "time_since_improvement null %": 15.35,
+  "time_since_improvement null % by type": {
+    "Elevator": 13.9,
+    "Escalator": 17.1
+  },
+  "units in >1 borough": 0,
+  "units in >1 station": 0,
+  "months with zero availability (24h)": 399,
+  "label balance: unit-months with >=1 entrapment %": 11.24,
+  "label balance: elevator unit-months with >=1 entrapment %": 20.48,
+  "units per month (min/median/max)": [
+    485.0,
+    602.0,
+    697.0
+  ]
+}

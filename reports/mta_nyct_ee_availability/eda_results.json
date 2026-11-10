@@ -1,0 +1,779 @@
+{
+  "coverage": {
+    "window": [
+      "2015-01-01",
+      "2026-09-01"
+    ],
+    "units": {
+      "MTA": {
+        "elevator": 368,
+        "escalator": 234
+      },
+      "third_party": {
+        "elevator": 51,
+        "escalator": 48
+      }
+    }
+  },
+  "by_type": {
+    "elevator": {
+      "unit_months": 45980,
+      "availability_24h_pct": 96.41,
+      "availability_am_pct": 97.01,
+      "availability_pm_pct": 96.9,
+      "unscheduled_per_unit_month": 1.563,
+      "scheduled_per_unit_month": 1.686,
+      "entrapments_per_100_unit_months": 30.68,
+      "share_unit_months_with_entrapment_pct": 20.48
+    },
+    "escalator": {
+      "unit_months": 37796,
+      "availability_24h_pct": 92.87,
+      "availability_am_pct": 93.92,
+      "availability_pm_pct": 92.97,
+      "unscheduled_per_unit_month": 5.508,
+      "scheduled_per_unit_month": 2.741,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    }
+  },
+  "by_type_operator": {
+    "elevator/MTA": {
+      "unit_months": 39744,
+      "availability_24h_pct": 97.02,
+      "availability_am_pct": 97.73,
+      "availability_pm_pct": 97.58,
+      "unscheduled_per_unit_month": 1.808,
+      "scheduled_per_unit_month": 1.951,
+      "entrapments_per_100_unit_months": 35.48,
+      "share_unit_months_with_entrapment_pct": 23.67
+    },
+    "elevator/third_party": {
+      "unit_months": 6236,
+      "availability_24h_pct": 92.67,
+      "availability_am_pct": 92.59,
+      "availability_pm_pct": 92.71,
+      "unscheduled_per_unit_month": 0.002,
+      "scheduled_per_unit_month": 0.001,
+      "entrapments_per_100_unit_months": 0.13,
+      "share_unit_months_with_entrapment_pct": 0.13
+    },
+    "escalator/MTA": {
+      "unit_months": 31383,
+      "availability_24h_pct": 93.79,
+      "availability_am_pct": 95.12,
+      "availability_pm_pct": 93.89,
+      "unscheduled_per_unit_month": 6.634,
+      "scheduled_per_unit_month": 3.301,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    },
+    "escalator/third_party": {
+      "unit_months": 6413,
+      "availability_24h_pct": 88.58,
+      "availability_am_pct": 88.32,
+      "availability_pm_pct": 88.67,
+      "unscheduled_per_unit_month": 0.0,
+      "scheduled_per_unit_month": 0.0,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    }
+  },
+  "third_party_outage_check": {
+    "elevator": 0.0022,
+    "escalator": 0.0002
+  },
+  "analysis_scope": "MTA-operated units only from here on",
+  "by_year": [
+    {
+      "year": 2015,
+      "unit_type": "elevator",
+      "unit_months": 2740,
+      "availability_24h_pct": 96.56,
+      "availability_am_pct": 97.54,
+      "availability_pm_pct": 97.1,
+      "unscheduled_per_unit_month": 1.886,
+      "scheduled_per_unit_month": 2.251,
+      "entrapments_per_100_unit_months": 33.76,
+      "share_unit_months_with_entrapment_pct": 21.82
+    },
+    {
+      "year": 2015,
+      "unit_type": "escalator",
+      "unit_months": 2220,
+      "availability_24h_pct": 94.41,
+      "availability_am_pct": 95.94,
+      "availability_pm_pct": 94.54,
+      "unscheduled_per_unit_month": 6.175,
+      "scheduled_per_unit_month": 3.4,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    },
+    {
+      "year": 2016,
+      "unit_type": "elevator",
+      "unit_months": 2779,
+      "availability_24h_pct": 96.03,
+      "availability_am_pct": 97.06,
+      "availability_pm_pct": 96.54,
+      "unscheduled_per_unit_month": 2.138,
+      "scheduled_per_unit_month": 2.015,
+      "entrapments_per_100_unit_months": 35.12,
+      "share_unit_months_with_entrapment_pct": 22.85
+    },
+    {
+      "year": 2016,
+      "unit_type": "escalator",
+      "unit_months": 2290,
+      "availability_24h_pct": 94.0,
+      "availability_am_pct": 95.66,
+      "availability_pm_pct": 94.08,
+      "unscheduled_per_unit_month": 5.86,
+      "scheduled_per_unit_month": 3.101,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    },
+    {
+      "year": 2017,
+      "unit_type": "elevator",
+      "unit_months": 2985,
+      "availability_24h_pct": 96.05,
+      "availability_am_pct": 97.12,
+      "availability_pm_pct": 96.42,
+      "unscheduled_per_unit_month": 2.325,
+      "scheduled_per_unit_month": 2.01,
+      "entrapments_per_100_unit_months": 51.93,
+      "share_unit_months_with_entrapment_pct": 31.22
+    },
+    {
+      "year": 2017,
+      "unit_type": "escalator",
+      "unit_months": 2688,
+      "availability_24h_pct": 94.68,
+      "availability_am_pct": 96.25,
+      "availability_pm_pct": 94.77,
+      "unscheduled_per_unit_month": 5.622,
+      "scheduled_per_unit_month": 3.503,
+      "entrapments_per_100_unit_months": 0.04,
+      "share_unit_months_with_entrapment_pct": 0.04
+    },
+    {
+      "year": 2018,
+      "unit_type": "elevator",
+      "unit_months": 3029,
+      "availability_24h_pct": 96.54,
+      "availability_am_pct": 97.43,
+      "availability_pm_pct": 97.09,
+      "unscheduled_per_unit_month": 2.309,
+      "scheduled_per_unit_month": 2.445,
+      "entrapments_per_100_unit_months": 50.68,
+      "share_unit_months_with_entrapment_pct": 31.63
+    },
+    {
+      "year": 2018,
+      "unit_type": "escalator",
+      "unit_months": 2727,
+      "availability_24h_pct": 93.76,
+      "availability_am_pct": 95.42,
+      "availability_pm_pct": 93.94,
+      "unscheduled_per_unit_month": 6.383,
+      "scheduled_per_unit_month": 4.412,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    },
+    {
+      "year": 2019,
+      "unit_type": "elevator",
+      "unit_months": 3100,
+      "availability_24h_pct": 96.34,
+      "availability_am_pct": 97.03,
+      "availability_pm_pct": 96.93,
+      "unscheduled_per_unit_month": 2.023,
+      "scheduled_per_unit_month": 2.019,
+      "entrapments_per_100_unit_months": 45.13,
+      "share_unit_months_with_entrapment_pct": 29.35
+    },
+    {
+      "year": 2019,
+      "unit_type": "escalator",
+      "unit_months": 2770,
+      "availability_24h_pct": 89.38,
+      "availability_am_pct": 91.33,
+      "availability_pm_pct": 89.09,
+      "unscheduled_per_unit_month": 9.929,
+      "scheduled_per_unit_month": 3.945,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    },
+    {
+      "year": 2020,
+      "unit_type": "elevator",
+      "unit_months": 3237,
+      "availability_24h_pct": 96.91,
+      "availability_am_pct": 97.67,
+      "availability_pm_pct": 97.72,
+      "unscheduled_per_unit_month": 1.416,
+      "scheduled_per_unit_month": 1.99,
+      "entrapments_per_100_unit_months": 28.58,
+      "share_unit_months_with_entrapment_pct": 20.08
+    },
+    {
+      "year": 2020,
+      "unit_type": "escalator",
+      "unit_months": 2764,
+      "availability_24h_pct": 92.89,
+      "availability_am_pct": 94.15,
+      "availability_pm_pct": 93.27,
+      "unscheduled_per_unit_month": 5.564,
+      "scheduled_per_unit_month": 3.177,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    },
+    {
+      "year": 2021,
+      "unit_type": "elevator",
+      "unit_months": 3480,
+      "availability_24h_pct": 96.6,
+      "availability_am_pct": 97.23,
+      "availability_pm_pct": 97.51,
+      "unscheduled_per_unit_month": 1.458,
+      "scheduled_per_unit_month": 2.101,
+      "entrapments_per_100_unit_months": 28.76,
+      "share_unit_months_with_entrapment_pct": 20.09
+    },
+    {
+      "year": 2021,
+      "unit_type": "escalator",
+      "unit_months": 2772,
+      "availability_24h_pct": 92.13,
+      "availability_am_pct": 93.5,
+      "availability_pm_pct": 92.3,
+      "unscheduled_per_unit_month": 7.032,
+      "scheduled_per_unit_month": 2.942,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    },
+    {
+      "year": 2022,
+      "unit_type": "elevator",
+      "unit_months": 3552,
+      "availability_24h_pct": 96.95,
+      "availability_am_pct": 97.39,
+      "availability_pm_pct": 97.57,
+      "unscheduled_per_unit_month": 1.656,
+      "scheduled_per_unit_month": 1.95,
+      "entrapments_per_100_unit_months": 30.69,
+      "share_unit_months_with_entrapment_pct": 22.52
+    },
+    {
+      "year": 2022,
+      "unit_type": "escalator",
+      "unit_months": 2772,
+      "availability_24h_pct": 92.14,
+      "availability_am_pct": 93.25,
+      "availability_pm_pct": 92.01,
+      "unscheduled_per_unit_month": 7.227,
+      "scheduled_per_unit_month": 2.597,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    },
+    {
+      "year": 2023,
+      "unit_type": "elevator",
+      "unit_months": 3620,
+      "availability_24h_pct": 97.71,
+      "availability_am_pct": 98.28,
+      "availability_pm_pct": 98.17,
+      "unscheduled_per_unit_month": 1.595,
+      "scheduled_per_unit_month": 1.949,
+      "entrapments_per_100_unit_months": 31.44,
+      "share_unit_months_with_entrapment_pct": 22.79
+    },
+    {
+      "year": 2023,
+      "unit_type": "escalator",
+      "unit_months": 2772,
+      "availability_24h_pct": 95.41,
+      "availability_am_pct": 96.51,
+      "availability_pm_pct": 95.43,
+      "unscheduled_per_unit_month": 6.933,
+      "scheduled_per_unit_month": 3.335,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    },
+    {
+      "year": 2024,
+      "unit_type": "elevator",
+      "unit_months": 3859,
+      "availability_24h_pct": 97.97,
+      "availability_am_pct": 98.54,
+      "availability_pm_pct": 98.46,
+      "unscheduled_per_unit_month": 1.653,
+      "scheduled_per_unit_month": 1.75,
+      "entrapments_per_100_unit_months": 30.4,
+      "share_unit_months_with_entrapment_pct": 21.61
+    },
+    {
+      "year": 2024,
+      "unit_type": "escalator",
+      "unit_months": 2772,
+      "availability_24h_pct": 95.64,
+      "availability_am_pct": 96.48,
+      "availability_pm_pct": 95.59,
+      "unscheduled_per_unit_month": 7.044,
+      "scheduled_per_unit_month": 3.166,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    },
+    {
+      "year": 2025,
+      "unit_type": "elevator",
+      "unit_months": 4125,
+      "availability_24h_pct": 98.17,
+      "availability_am_pct": 98.7,
+      "availability_pm_pct": 98.64,
+      "unscheduled_per_unit_month": 1.716,
+      "scheduled_per_unit_month": 1.616,
+      "entrapments_per_100_unit_months": 30.74,
+      "share_unit_months_with_entrapment_pct": 20.73
+    },
+    {
+      "year": 2025,
+      "unit_type": "escalator",
+      "unit_months": 2766,
+      "availability_24h_pct": 96.12,
+      "availability_am_pct": 96.98,
+      "availability_pm_pct": 96.33,
+      "unscheduled_per_unit_month": 6.048,
+      "scheduled_per_unit_month": 2.899,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    },
+    {
+      "year": 2026,
+      "unit_type": "elevator",
+      "unit_months": 3238,
+      "availability_24h_pct": 97.67,
+      "availability_am_pct": 98.23,
+      "availability_pm_pct": 98.01,
+      "unscheduled_per_unit_month": 1.778,
+      "scheduled_per_unit_month": 1.522,
+      "entrapments_per_100_unit_months": 34.59,
+      "share_unit_months_with_entrapment_pct": 21.99
+    },
+    {
+      "year": 2026,
+      "unit_type": "escalator",
+      "unit_months": 2070,
+      "availability_24h_pct": 96.33,
+      "availability_am_pct": 97.19,
+      "availability_pm_pct": 96.77,
+      "unscheduled_per_unit_month": 5.149,
+      "scheduled_per_unit_month": 3.092,
+      "entrapments_per_100_unit_months": 0.0,
+      "share_unit_months_with_entrapment_pct": 0.0
+    }
+  ],
+  "elevator_trend_unscheduled_spearman": {
+    "rho": -0.538,
+    "p": 0.07089431754922311
+  },
+  "elevator_by_month_of_year": [
+    {
+      "month": 1,
+      "unscheduled": 2.1,
+      "entrapments": 0.415,
+      "availability_24h_pct": 96.745
+    },
+    {
+      "month": 2,
+      "unscheduled": 1.854,
+      "entrapments": 0.359,
+      "availability_24h_pct": 96.746
+    },
+    {
+      "month": 3,
+      "unscheduled": 1.802,
+      "entrapments": 0.343,
+      "availability_24h_pct": 97.148
+    },
+    {
+      "month": 4,
+      "unscheduled": 1.634,
+      "entrapments": 0.324,
+      "availability_24h_pct": 97.331
+    },
+    {
+      "month": 5,
+      "unscheduled": 1.659,
+      "entrapments": 0.33,
+      "availability_24h_pct": 97.375
+    },
+    {
+      "month": 6,
+      "unscheduled": 1.747,
+      "entrapments": 0.35,
+      "availability_24h_pct": 96.989
+    },
+    {
+      "month": 7,
+      "unscheduled": 1.877,
+      "entrapments": 0.355,
+      "availability_24h_pct": 97.031
+    },
+    {
+      "month": 8,
+      "unscheduled": 1.846,
+      "entrapments": 0.341,
+      "availability_24h_pct": 96.727
+    },
+    {
+      "month": 9,
+      "unscheduled": 1.736,
+      "entrapments": 0.341,
+      "availability_24h_pct": 96.922
+    },
+    {
+      "month": 10,
+      "unscheduled": 1.769,
+      "entrapments": 0.347,
+      "availability_24h_pct": 97.149
+    },
+    {
+      "month": 11,
+      "unscheduled": 1.73,
+      "entrapments": 0.363,
+      "availability_24h_pct": 97.088
+    },
+    {
+      "month": 12,
+      "unscheduled": 1.939,
+      "entrapments": 0.394,
+      "availability_24h_pct": 97.007
+    }
+  ],
+  "elevator_month_of_year_kruskal_p": 7.553759925827578e-16,
+  "pareto": {
+    "elevator": {
+      "units": 368,
+      "share_of_unscheduled_from_top10pct_units": 26.4,
+      "share_of_unscheduled_from_top20pct_units": 44.3,
+      "unscheduled_per_month_p10_p50_p90": [
+        0.74,
+        1.51,
+        3.22
+      ],
+      "availability_p10_p50_p90": [
+        95.29,
+        97.63,
+        99.05
+      ],
+      "share_of_entrapments_from_top10pct_units": 29.8,
+      "units_with_zero_entrapments": 7
+    },
+    "escalator": {
+      "units": 234,
+      "share_of_unscheduled_from_top10pct_units": 20.8,
+      "share_of_unscheduled_from_top20pct_units": 35.7,
+      "unscheduled_per_month_p10_p50_p90": [
+        3.25,
+        6.22,
+        11.02
+      ],
+      "availability_p10_p50_p90": [
+        90.01,
+        94.59,
+        96.71
+      ]
+    }
+  },
+  "worst_elevators": [
+    {
+      "unit_id": "EL710",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 141,
+      "unscheduled_per_month": 5.33,
+      "entrapments_per_year": 6.81,
+      "availability_24h_pct": 96.31
+    },
+    {
+      "unit_id": "EL601",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 133,
+      "unscheduled_per_month": 5.18,
+      "entrapments_per_year": 3.43,
+      "availability_24h_pct": 94.35
+    },
+    {
+      "unit_id": "EL108",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 132,
+      "unscheduled_per_month": 4.98,
+      "entrapments_per_year": 9.91,
+      "availability_24h_pct": 92.74
+    },
+    {
+      "unit_id": "EL509",
+      "borough": "Bronx",
+      "operator": "MTA",
+      "months": 32,
+      "unscheduled_per_month": 4.88,
+      "entrapments_per_year": 6.75,
+      "availability_24h_pct": 97.63
+    },
+    {
+      "unit_id": "EL113",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 131,
+      "unscheduled_per_month": 4.79,
+      "entrapments_per_year": 3.85,
+      "availability_24h_pct": 94.96
+    },
+    {
+      "unit_id": "EL405",
+      "borough": "Queens",
+      "operator": "MTA",
+      "months": 131,
+      "unscheduled_per_month": 4.77,
+      "entrapments_per_year": 10.17,
+      "availability_24h_pct": 96.13
+    },
+    {
+      "unit_id": "EL117",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 130,
+      "unscheduled_per_month": 4.51,
+      "entrapments_per_year": 3.69,
+      "availability_24h_pct": 95.06
+    },
+    {
+      "unit_id": "EL109",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 131,
+      "unscheduled_per_month": 4.37,
+      "entrapments_per_year": 7.15,
+      "availability_24h_pct": 95.28
+    },
+    {
+      "unit_id": "EL281",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 141,
+      "unscheduled_per_month": 4.32,
+      "entrapments_per_year": 4.43,
+      "availability_24h_pct": 95.89
+    },
+    {
+      "unit_id": "EL277",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 141,
+      "unscheduled_per_month": 4.29,
+      "entrapments_per_year": 12.43,
+      "availability_24h_pct": 93.79
+    },
+    {
+      "unit_id": "EL114",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 131,
+      "unscheduled_per_month": 4.23,
+      "entrapments_per_year": 6.14,
+      "availability_24h_pct": 95.87
+    },
+    {
+      "unit_id": "EL128",
+      "borough": "Bronx",
+      "operator": "MTA",
+      "months": 132,
+      "unscheduled_per_month": 4.14,
+      "entrapments_per_year": 12.73,
+      "availability_24h_pct": 94.83
+    },
+    {
+      "unit_id": "EL104",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 133,
+      "unscheduled_per_month": 4.09,
+      "entrapments_per_year": 9.83,
+      "availability_24h_pct": 89.28
+    },
+    {
+      "unit_id": "EL328",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 141,
+      "unscheduled_per_month": 4.05,
+      "entrapments_per_year": 2.38,
+      "availability_24h_pct": 96.28
+    },
+    {
+      "unit_id": "EL120",
+      "borough": "Manhattan",
+      "operator": "MTA",
+      "months": 127,
+      "unscheduled_per_month": 3.99,
+      "entrapments_per_year": 16.54,
+      "availability_24h_pct": 89.6
+    }
+  ],
+  "by_borough_elevator": {
+    "Bronx": {
+      "unit_months": 5321,
+      "availability_24h_pct": 96.74,
+      "availability_am_pct": 97.48,
+      "availability_pm_pct": 97.24,
+      "unscheduled_per_unit_month": 1.768,
+      "scheduled_per_unit_month": 1.924,
+      "entrapments_per_100_unit_months": 40.22,
+      "share_unit_months_with_entrapment_pct": 26.12
+    },
+    "Brooklyn": {
+      "unit_months": 9592,
+      "availability_24h_pct": 97.36,
+      "availability_am_pct": 98.07,
+      "availability_pm_pct": 97.87,
+      "unscheduled_per_unit_month": 1.495,
+      "scheduled_per_unit_month": 1.827,
+      "entrapments_per_100_unit_months": 32.16,
+      "share_unit_months_with_entrapment_pct": 21.55
+    },
+    "Manhattan": {
+      "unit_months": 19463,
+      "availability_24h_pct": 96.77,
+      "availability_am_pct": 97.49,
+      "availability_pm_pct": 97.35,
+      "unscheduled_per_unit_month": 2.014,
+      "scheduled_per_unit_month": 2.006,
+      "entrapments_per_100_unit_months": 37.15,
+      "share_unit_months_with_entrapment_pct": 24.63
+    },
+    "Queens": {
+      "unit_months": 5368,
+      "availability_24h_pct": 97.59,
+      "availability_am_pct": 98.24,
+      "availability_pm_pct": 98.18,
+      "unscheduled_per_unit_month": 1.659,
+      "scheduled_per_unit_month": 1.996,
+      "entrapments_per_100_unit_months": 30.63,
+      "share_unit_months_with_entrapment_pct": 21.55
+    }
+  },
+  "elevator_entrapment_by_borough_chi2_p": 5.376315929451657e-14,
+  "elevator_by_years_since_major_improvement": [
+    {
+      "band": "0-2y",
+      "unit_months": 3179,
+      "availability_24h_pct": 98.21,
+      "availability_am_pct": 98.79,
+      "availability_pm_pct": 98.61,
+      "unscheduled_per_unit_month": 1.443,
+      "scheduled_per_unit_month": 1.782,
+      "entrapments_per_100_unit_months": 28.15,
+      "share_unit_months_with_entrapment_pct": 20.01
+    },
+    {
+      "band": "2-5y",
+      "unit_months": 3902,
+      "availability_24h_pct": 97.76,
+      "availability_am_pct": 98.44,
+      "availability_pm_pct": 98.23,
+      "unscheduled_per_unit_month": 1.667,
+      "scheduled_per_unit_month": 1.695,
+      "entrapments_per_100_unit_months": 23.45,
+      "share_unit_months_with_entrapment_pct": 17.89
+    },
+    {
+      "band": "5-10y",
+      "unit_months": 6446,
+      "availability_24h_pct": 97.25,
+      "availability_am_pct": 98.0,
+      "availability_pm_pct": 97.78,
+      "unscheduled_per_unit_month": 1.823,
+      "scheduled_per_unit_month": 1.955,
+      "entrapments_per_100_unit_months": 27.52,
+      "share_unit_months_with_entrapment_pct": 20.06
+    },
+    {
+      "band": "10-20y",
+      "unit_months": 14518,
+      "availability_24h_pct": 96.97,
+      "availability_am_pct": 97.68,
+      "availability_pm_pct": 97.59,
+      "unscheduled_per_unit_month": 1.669,
+      "scheduled_per_unit_month": 2.097,
+      "entrapments_per_100_unit_months": 37.08,
+      "share_unit_months_with_entrapment_pct": 24.94
+    },
+    {
+      "band": "20y+",
+      "unit_months": 11538,
+      "availability_24h_pct": 96.3,
+      "availability_am_pct": 97.04,
+      "availability_pm_pct": 96.86,
+      "unscheduled_per_unit_month": 2.126,
+      "scheduled_per_unit_month": 1.911,
+      "entrapments_per_100_unit_months": 43.88,
+      "share_unit_months_with_entrapment_pct": 27.05
+    }
+  ],
+  "elevator_age_vs_unscheduled_spearman": {
+    "rho": 0.055,
+    "p": 8.912619065742806e-28,
+    "n": 39583
+  },
+  "downtime": {
+    "elevator": {
+      "monthly_downtime_h_p50_p90_p99": [
+        11.2,
+        44.9,
+        179.6
+      ],
+      "unit_months_fully_down": 19,
+      "unit_months_below_90pct": 1855,
+      "share_unit_months_below_90pct": 4.83
+    },
+    "escalator": {
+      "monthly_downtime_h_p50_p90_p99": [
+        24.6,
+        88.1,
+        412.1
+      ],
+      "unit_months_fully_down": 107,
+      "unit_months_below_90pct": 3994,
+      "share_unit_months_below_90pct": 13.22
+    }
+  },
+  "peak_vs_24h": {
+    "elevator": {
+      "am_minus_24h_pp": 0.71,
+      "pm_minus_24h_pp": 0.56
+    },
+    "escalator": {
+      "am_minus_24h_pp": 1.33,
+      "pm_minus_24h_pp": 0.1
+    }
+  },
+  "elevator_entrapment_persistence": {
+    "P(entrapment next month)": 23.71,
+    "P(next | entrapment this month)": 40.03,
+    "P(next | none this month)": 18.64,
+    "P(next | >=2 in last 3 months)": 40.9,
+    "corr(unscheduled, entrapments) same month": 0.487,
+    "lag1 autocorr unscheduled (pooled)": 0.441
+  },
+  "elevator_P(entrapment next month) by unscheduled-outage quintile this month": {
+    "Q1 low": 17.13,
+    "Q2": 15.68,
+    "Q3": 20.43,
+    "Q4": 28.88,
+    "Q5 high": 36.44
+  }
+}
