@@ -1,0 +1,119 @@
+{
+  "period": [
+    "2015-01-01 06:00:00",
+    "2016-01-01 06:00:00"
+  ],
+  "thresholds": {
+    "motor_voltage_v": {
+      "direction": "high",
+      "basis": "24h rolling mean",
+      "PRELIMINARY": 177.65837644478756,
+      "WARNING": 190.92669652654874,
+      "LEVEL_3": 196.8166953609012
+    },
+    "motor_rpm": {
+      "direction": "low",
+      "basis": "24h rolling mean",
+      "PRELIMINARY": 421.43988879818113,
+      "WARNING": 367.1013996756681,
+      "LEVEL_3": 345.33602517932286
+    },
+    "brake_pressure_psi": {
+      "direction": "high",
+      "basis": "24h rolling mean",
+      "PRELIMINARY": 105.0603049915294,
+      "WARNING": 125.03133581506623,
+      "LEVEL_3": 129.30339244876842
+    },
+    "car_vibration_mm_s": {
+      "direction": "high",
+      "basis": "24h rolling mean",
+      "PRELIMINARY": 42.66739330108158,
+      "WARNING": 50.18703544864549,
+      "LEVEL_3": 53.46644118369564
+    },
+    "door_vibration": {
+      "PRELIMINARY": 70.19100000000006,
+      "WARNING": 95.49009999999994,
+      "LEVEL_3": 99.66
+    },
+    "sound_anomaly_score": {
+      "PRELIMINARY": 0.5371477391406645,
+      "WARNING": 0.6084723132695481,
+      "LEVEL_3": 0.7093764292450881
+    },
+    "failure_probability": {
+      "PRELIMINARY": 0.15,
+      "WARNING": 0.35,
+      "LEVEL_3": 0.6
+    }
+  },
+  "sound": {
+    "holdout_roc_auc": 0.9193446754883428,
+    "n_clips": 519,
+    "n_abnormal": 138
+  },
+  "model": {
+    "DOOR": {
+      "roc_auc": 0.9999831057027906,
+      "pr_auc": 0.9958561682944181,
+      "precision_at_warning": 0.9712230215827338,
+      "recall_at_warning": 0.9926470588235294,
+      "train_positives": 1119,
+      "test_positives": 408
+    },
+    "MOTOR": {
+      "roc_auc": 0.9999999999999999,
+      "pr_auc": 1.0,
+      "precision_at_warning": 1.0,
+      "recall_at_warning": 1.0,
+      "train_positives": 1347,
+      "test_positives": 722
+    },
+    "BRAKE": {
+      "roc_auc": 0.9999990072248413,
+      "pr_auc": 0.9997084249871898,
+      "precision_at_warning": 1.0,
+      "recall_at_warning": 0.990625,
+      "train_positives": 725,
+      "test_positives": 320
+    },
+    "CONTROLLER": {
+      "roc_auc": 0.9999997491591128,
+      "pr_auc": 0.9999461568925773,
+      "precision_at_warning": 0.9933481152993349,
+      "recall_at_warning": 0.9955555555555555,
+      "train_positives": 979,
+      "test_positives": 450
+    },
+    "_meta": {
+      "train_end": "2015-09-01",
+      "horizon_hours": 24,
+      "step_hours": 3,
+      "n_train": 194200,
+      "n_test": 97900
+    },
+    "_event_recall": {
+      "DOOR": {
+        "failures": 51,
+        "caught": 51,
+        "event_recall": 1.0
+      },
+      "MOTOR": {
+        "failures": 91,
+        "caught": 91,
+        "event_recall": 1.0
+      },
+      "BRAKE": {
+        "failures": 40,
+        "caught": 40,
+        "event_recall": 1.0
+      },
+      "CONTROLLER": {
+        "failures": 57,
+        "caught": 57,
+        "event_recall": 1.0
+      }
+    }
+  }
+}

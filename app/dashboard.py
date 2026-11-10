@@ -235,8 +235,12 @@ with tabs[2]:
             st.dataframe(cl[["timestamp", "anomaly_score", "level", "spectral_centroid_hz", "rms"]]
                          .style.map(color_level, subset=["level"]), hide_index=True, width="stretch")
             pick = st.selectbox("Play recording", cl.timestamp.astype(str).tolist())
-            sr, x = wavfile.read(C.ROOT / cl[cl.timestamp.astype(str) == pick].iloc[0].file)
-            st.audio((x[:, 0] if x.ndim > 1 else x).astype(np.float32) / 32768.0, sample_rate=sr)
+            wav = C.ROOT / cl[cl.timestamp.astype(str) == pick].iloc[0].file
+            if wav.exists():
+                sr, x = wavfile.read(wav)
+                st.audio((x[:, 0] if x.ndim > 1 else x).astype(np.float32) / 32768.0, sample_rate=sr)
+            else:
+                st.info("Audio file not available in this deployment (raw MIMII data not included).")
 
     st.markdown("**Alert history**")
     eh = hist[hist.elevator_id == eid].sort_values("start", ascending=False)
